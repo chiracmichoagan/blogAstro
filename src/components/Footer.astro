@@ -1,0 +1,33 @@
+---
+const platform = "github";
+const facebook = "facebook";
+const facebookUsername = "https://www.facebook.com/share/1HU3ArxABb/?mibextid=wwXIfr";
+const linkedin = "linkedin"
+const linkedinUsername ="https://www.linkedin.com/in/chirac-dona-michoagan"
+const username = "https://github.com/chiracmichoagan";
+
+import Social from './Social.astro';
+---
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
+
+<footer>
+  <!-- <p>Apprenez-en plus sur mes projets sur <a href={`https://www.${platform}.com/${username}`}>{platform}</a> !</p> -->
+  <p>Suivez moi mes réseaux sociaux :</p>
+
+<!-- <ul> -->
+    <!-- <li><a href={`https://www.${platform}.com/${username}`}>{platform}</a></li> -->
+    <!-- <li><a href={`https://www.facebook.com/${facebookUsername}`}>{facebook}</a></li> -->
+    <!-- <li><a href={`https://www.twitter.com/${username}`}>Twitter</a></li> -->
+    <!-- <li><a href={`https://www.linkedin.com/in/${linkedinUsername}`}>{linkedin}</a></li> -->
+<!-- </ul> -->
+
+ <Social platform="facebook" username="https://www.facebook.com/share/1HU3ArxABb/?mibextid=wwXIfr" />
+  <Social platform="github" username="https://github.com/chiracmichoagan" />
+  <Social platform="linkedin" username="https://www.linkedin.com/in/chirac-dona-michoagan" />
+</footer>
